@@ -1,16 +1,12 @@
 // ----------- IMPORTS ----------- //
 
-// import aboutImage from "../assets/images/avatar.jpeg";
-import "../styles/About.css";
+// import "../styles/About.css";
 
 function About() {
   return (
     <div className="about-section" id="about">
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
-            <img src={aboutImage} alt="About Me" className="about-image" />
-          </div>
           <div className="col-md-6">
             <h2>About</h2>
             <p>

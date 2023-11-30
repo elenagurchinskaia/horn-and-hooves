@@ -2,10 +2,9 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
+import Contact from "./pages/Contact.jsx";
+import Project from "./pages/ProjectPage.jsx";
 import About from "./pages/About.jsx";
-import Portfolio from "./pages/Portfolio.jsx";
-import Contacts from "./pages/Contacts.jsx";
-import Resume from "./pages/Resume.jsx";
 import Error from "./pages/Error.jsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -20,10 +19,9 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { index: true, element: <Home /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/projects", element: <Project /> },
       { path: "/about", element: <About /> },
-      { path: "/portfolio", element: <Portfolio /> },
-      { path: "/contact", element: <Contacts /> },
-      { path: "/resume", element: <Resume /> },
     ],
   },
 ]);

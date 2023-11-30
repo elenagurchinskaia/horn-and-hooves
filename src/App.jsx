@@ -1,17 +1,15 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Outlet } from "react-router-dom";
-import Header from "./components/Header";
-// import About from "./pages/About";
 
 function App() {
   // const [showAbout, setActiveTab] = useState(true);
 
   return (
     <div>
-      <Header />
-      {/* {showAbout && <About />} */}
+      <Navbar />
       <Outlet />
       <Footer />
     </div>
