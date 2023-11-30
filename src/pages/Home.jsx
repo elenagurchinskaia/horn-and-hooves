@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
+import "../styles/Home.css";
 
 function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,11 +32,19 @@ function Home() {
         </button>
         <div className="mode-toggles">
           <label className="dark-mode-toggle">
-            <input type="checkbox" onChange={toggleDarkMode} />
+            <input
+              type="checkbox"
+              onChange={toggleDarkMode}
+              className="dark-mode-checkbox"
+            />
             Dark Mode
           </label>
           <label className="light-mode-toggle">
-            <input type="checkbox" onChange={toggleLightMode} />
+            <input
+              type="checkbox"
+              onChange={toggleLightMode}
+              className="light-mode-checkbox"
+            />
             Light Mode
           </label>
         </div>

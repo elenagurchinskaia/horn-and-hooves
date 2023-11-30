@@ -1,0 +1,65 @@
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  /* padding: 10px; */
+}
+
+.company-name {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.company-type {
+  font-size: 1.5rem;
+  font-weight: 200; /* Thin font weight */
+  text-align: center;
+  /* margin-top: 3px; */
+}
+
+.company-slogan {
+  position: absolute;
+  bottom: -90px;
+  right: 20%;
+  transform: translateX(50%);
+  text-align: center;
+  width: 200px;
+  height: 5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.mode-toggles {
+  position: absolute;
+  bottom: -120px;
+  left: -60px;
+  transform: rotate(-90deg);
+}
+
+.dark-mode-toggle {
+  color: black;
+  margin-right: 10px;
+}
+
+.light-mode-toggle {
+  color: black;
+}
+
+.dark-mode-checkbox:checked {
+  filter: invert(1); /* Invert the color when checked (white -> black) */
+}
+
+.light-mode-checkbox:checked {
+  filter: invert(0); /* Invert the color when checked (black -> white) */
+}
+
+.scroll-button {
+  position: absolute;
+  bottom: -120px;
+}
