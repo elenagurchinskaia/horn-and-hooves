@@ -1,6 +1,7 @@
 import "../styles/Navbar.css";
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Navbar() {
   const [activeTab, setActiveTab] = useState("");
@@ -21,62 +22,51 @@ function Navbar() {
   };
 
   return (
-    <ul className="nav">
-      <li className="nav-item">
-        <Link
-          to="/"
-          className={`nav-link ${currentPage === "/" ? "active" : ""}`}
-          style={activeTab === "home" ? activeLinkStyle : linkStyle}
-          onClick={() => handleTabClick("home")}
-        >
-          <span>Home</span>
+    <nav className="navbar">
+      <div className="logo">
+        {/* Your logo image or element goes here */}
+        <Link to="/">
+          <img src="/src/assets/images/horn & hooves logo.png" alt="Logo" />
         </Link>
-      </li>
-
-      <li className="nav-item">
-        <Link
-          to="/about"
-          className={`nav-link ${currentPage === "/about" ? "active" : ""}`}
-          style={activeTab === "about" ? activeLinkStyle : linkStyle}
-          onClick={() => handleTabClick("about")}
-        >
-          <span>About</span>
-        </Link>
-      </li>
-
-      <li className="nav-item">
-        <Link
-          to="/portfolio"
-          className={`nav-link ${currentPage === "/portfolio" ? "active" : ""}`}
-          style={activeTab === "portfolio" ? activeLinkStyle : linkStyle}
-          onClick={() => handleTabClick("portfolio")}
-        >
-          <span>Portfolio</span>
-        </Link>
-      </li>
-
-      <li className="nav-item">
-        <Link
-          to="/contact"
-          className={`nav-link ${currentPage === "/contacts" ? "active" : ""}`}
-          style={activeTab === "contacts" ? activeLinkStyle : linkStyle}
-          onClick={() => handleTabClick("contacts")}
-        >
-          <span>Contacts</span>
-        </Link>
-      </li>
-
-      <li className="nav-item">
-        <Link
-          to="/resume"
-          className={`nav-link ${currentPage === "/resume" ? "active" : ""}`}
-          style={activeTab === "resume" ? activeLinkStyle : linkStyle}
-          onClick={() => handleTabClick("resume")}
-        >
-          <span>Resume</span>
-        </Link>
-      </li>
-    </ul>
+      </div>
+      <ul className="nav">
+        <li className="nav-item">
+          <Link to="/contact" className="nav-link">
+            Contact
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/projects" className="nav-link">
+            Projects
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/about" className="nav-link">
+            About
+          </Link>
+        </li>
+      </ul>
+      <ul className="social-icons">
+        <li>
+          <a
+            href="https://instagram.com/hornandhooves?igshid=NzZlODBkYWE4Ng=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/hornandhooves/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
