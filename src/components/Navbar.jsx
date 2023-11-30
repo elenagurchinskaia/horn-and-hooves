@@ -26,27 +26,49 @@ function Navbar() {
       <div className="logo">
         {/* Your logo image or element goes here */}
         <Link to="/">
-          <img src="/src/assets/images/horn & hooves logo.png" alt="Logo" />
+          <img
+            src="/src/assets/images/horn & hooves logo.png"
+            alt="Logo"
+            style={activeTab === "home" ? activeLinkStyle : linkStyle}
+            onClick={() => handleTabClick("home")}
+          />
         </Link>
       </div>
-      <ul className="nav">
-        <li className="nav-item">
-          <Link to="/contact" className="nav-link">
-            CONTACT
+      <div className="nav">
+        <div className="nav-item">
+          <Link
+            to="/contact"
+            className={`nav-link ${currentPage === "/contact" ? "active" : ""}`}
+            style={activeTab === "contact" ? activeLinkStyle : linkStyle}
+            onClick={() => handleTabClick("contact")}
+          >
+            <span>CONTACT</span>
           </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/projects" className="nav-link">
-            PROJECTS
+        </div>
+        <div className="nav-item">
+          <Link
+            to="/projects"
+            className={`nav-link ${
+              currentPage === "/projects" ? "active" : ""
+            }`}
+            style={activeTab === "projects" ? activeLinkStyle : linkStyle}
+            onClick={() => handleTabClick("projects")}
+          >
+            <span>PROJECTS</span>
           </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/about" className="nav-link">
-            ABOUT
+        </div>
+        <div className="nav-item">
+          <Link
+            to="/about"
+            className={`nav-link ${currentPage === "/about" ? "active" : ""}`}
+            style={activeTab === "about" ? activeLinkStyle : linkStyle}
+            onClick={() => handleTabClick("about")}
+          >
+            <span>ABOUT</span>
           </Link>
-        </li>
-      </ul>
-      <ul className="social-icons">
+        </div>
+      </div>
+      <div className="social-icons">
         <div>
           <a
             href="https://instagram.com/hornandhooves?igshid=NzZlODBkYWE4Ng=="
@@ -65,7 +87,7 @@ function Navbar() {
             <FaLinkedin />
           </a>
         </div>
-      </ul>
+      </div>
     </nav>
   );
 }

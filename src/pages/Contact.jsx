@@ -92,7 +92,7 @@ function Contact() {
   }
   return (
     <>
-      <h1>Contacts</h1>
+      <h1>Contact</h1>
 
       <ContactForm
         input={input}
