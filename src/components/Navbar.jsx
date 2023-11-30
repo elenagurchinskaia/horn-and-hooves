@@ -45,6 +45,7 @@ function Navbar() {
             <span>CONTACT</span>
           </Link>
         </div>
+        <span className="slash">/</span>
         <div className="nav-item">
           <Link
             to="/projects"
@@ -57,6 +58,7 @@ function Navbar() {
             <span>PROJECTS</span>
           </Link>
         </div>
+        <span className="slash">/</span>
         <div className="nav-item">
           <Link
             to="/about"
