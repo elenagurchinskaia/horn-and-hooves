@@ -32,22 +32,22 @@ function Navbar() {
       <ul className="nav">
         <li className="nav-item">
           <Link to="/contact" className="nav-link">
-            Contact
+            CONTACT
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/projects" className="nav-link">
-            Projects
+            PROJECTS
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/about" className="nav-link">
-            About
+            ABOUT
           </Link>
         </li>
       </ul>
       <ul className="social-icons">
-        <li>
+        <div>
           <a
             href="https://instagram.com/hornandhooves?igshid=NzZlODBkYWE4Ng=="
             target="_blank"
@@ -55,8 +55,8 @@ function Navbar() {
           >
             <FaInstagram />
           </a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a
             href="https://www.linkedin.com/company/hornandhooves/"
             target="_blank"
@@ -64,7 +64,7 @@ function Navbar() {
           >
             <FaLinkedin />
           </a>
-        </li>
+        </div>
       </ul>
     </nav>
   );

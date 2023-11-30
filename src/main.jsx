@@ -1,4 +1,3 @@
-// import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
@@ -19,6 +18,7 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { index: true, element: <Home /> },
+      { path: "/", element: <Home /> },
       { path: "/contact", element: <Contact /> },
       { path: "/projects", element: <Project /> },
       { path: "/about", element: <About /> },
