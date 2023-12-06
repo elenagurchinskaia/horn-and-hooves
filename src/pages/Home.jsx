@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
 import "../styles/Home.css";
+import Background from "../components/Background";
 
 function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,8 +21,10 @@ function Home() {
   };
 
   return (
-    <div className={darkMode ? "dark-mode" : "light-mode"}>
-      <div className="home-container">
+    <div className="home-container">
+      <Background backgroundColor={0x333333} />
+      {/* <Background backgroundColor={darkMode ? 0x000000 : 0xffffff} /> */}
+      <div className="content">
         <h1 className="company-name">horn & hooves</h1>
         <h3 className="company-type">VISUALIZATION STUDIO</h3>
         <h5 className="company-slogan">
