@@ -24,6 +24,7 @@ function Home() {
     <div className="home-container">
       <Background backgroundColor={0x333333} />
       {/* <Background backgroundColor={darkMode ? 0x000000 : 0xffffff} /> */}
+
       <div className="content">
         <h1 className="company-name">horn & hooves</h1>
         <h3 className="company-type">VISUALIZATION STUDIO</h3>

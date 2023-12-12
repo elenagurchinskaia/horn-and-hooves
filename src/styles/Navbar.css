@@ -1,4 +1,8 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,6 +10,7 @@
   background-color: none;
   color: black;
   font-weight: normal;
+  z-index: 1000;
 }
 
 .logo {

@@ -13,7 +13,7 @@ const Background = ({ backgroundColor = 0x000000 }) => {
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
-      75,
+      40,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
@@ -51,7 +51,7 @@ const Background = ({ backgroundColor = 0x000000 }) => {
     };
   }, [backgroundColor]);
 
-  return <div ref={containerRef} />;
+  return <div ref={containerRef} style={{ height: "100vh" }} />;
 };
 
 export default Background;
