@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { Canvas, useFrame } from "https://esm.sh/@react-three/fiber";
 import htm from "https://esm.sh/htm";
+import { gsap } from "gsap";
 
 const html = htm.bind(React.createElement);
 
